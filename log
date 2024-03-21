@@ -183,3 +183,47 @@ exercises.c:131:23: error: initialization of ‘char’ from ‘void *’ makes 
 cc1: all warnings being treated as errors
 Compilation failed
 67e627f
+Thu 21 Mar 2024 09:00:51 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:126:15: error: comparison between pointer and integer [-Werror]
+  126 |       if(temp == '('|| temp == '['|| temp == '{'){
+      |               ^~
+exercises.c:126:29: error: comparison between pointer and integer [-Werror]
+  126 |       if(temp == '('|| temp == '['|| temp == '{'){
+      |                             ^~
+exercises.c:126:43: error: comparison between pointer and integer [-Werror]
+  126 |       if(temp == '('|| temp == '['|| temp == '{'){
+      |                                           ^~
+exercises.c:129:21: error: comparison between pointer and integer [-Werror]
+  129 |       }else if(temp == ')'|| temp == ']'|| temp == '}'){
+      |                     ^~
+exercises.c:129:35: error: comparison between pointer and integer [-Werror]
+  129 |       }else if(temp == ')'|| temp == ']'|| temp == '}'){
+      |                                   ^~
+exercises.c:129:49: error: comparison between pointer and integer [-Werror]
+  129 |       }else if(temp == ')'|| temp == ']'|| temp == '}'){
+      |                                                 ^~
+exercises.c:133:18: error: comparison between pointer and integer [-Werror]
+  133 |         if((temp == ')' && cierre == '(' ) || (temp == ']' && cierre == '[') || (temp == '}' && cierre == '{')){
+      |                  ^~
+exercises.c:133:35: error: comparison between pointer and integer [-Werror]
+  133 |         if((temp == ')' && cierre == '(' ) || (temp == ']' && cierre == '[') || (temp == '}' && cierre == '{')){
+      |                                   ^~
+exercises.c:133:53: error: comparison between pointer and integer [-Werror]
+  133 |         if((temp == ')' && cierre == '(' ) || (temp == ']' && cierre == '[') || (temp == '}' && cierre == '{')){
+      |                                                     ^~
+exercises.c:133:70: error: comparison between pointer and integer [-Werror]
+  133 |         if((temp == ')' && cierre == '(' ) || (temp == ']' && cierre == '[') || (temp == '}' && cierre == '{')){
+      |                                                                      ^~
+exercises.c:133:87: error: comparison between pointer and integer [-Werror]
+  133 |         if((temp == ')' && cierre == '(' ) || (temp == ']' && cierre == '[') || (temp == '}' && cierre == '{')){
+      |                                                                                       ^~
+exercises.c:133:104: error: comparison between pointer and integer [-Werror]
+  133 |         if((temp == ')' && cierre == '(' ) || (temp == ']' && cierre == '[') || (temp == '}' && cierre == '{')){
+      |                                                                                                        ^~
+cc1: all warnings being treated as errors
+Compilation failed
+cd1ef02
