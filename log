@@ -96,3 +96,17 @@ exercises.c:131:14: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 240dc50
+Thu 21 Mar 2024 08:55:44 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:125:14: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  125 |       temp = (char*) cadena[i];
+      |              ^
+exercises.c:131:23: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  131 |         char cierre = top(stack);
+      |                       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+79de61b

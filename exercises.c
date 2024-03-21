@@ -128,11 +128,10 @@ int parentesisBalanceados(char *cadena) {
 
       }else if(cadena[i] == ')'|| cadena[i] == ']'|| cadena[i] == '}'){
         if(stack == NULL) return 1;
-        char top = top(stack);
+        char cierre = top(stack);
 
-        if((cadena[i] == ')' && top == '(' ) || (cadena[i] == ']' && top == '[') || (cadena[i] == '}' && top == '{')){
+        if((cadena[i] == ')' && cierre == '(' ) || (cadena[i] == ']' && cierre == '[') || (cadena[i] == '}' && cierre == '{')){
           pop(stack);
-
         }else {
             return 0;
         }
