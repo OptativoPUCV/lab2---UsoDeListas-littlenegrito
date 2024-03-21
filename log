@@ -110,3 +110,14 @@ exercises.c:131:23: error: initialization of ‘char’ from ‘void *’ makes 
 cc1: all warnings being treated as errors
 Compilation failed
 79de61b
+Thu 21 Mar 2024 08:57:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:23: error: initialization of ‘char’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  131 |         char cierre = top(stack);
+      |                       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+56c7e5f
